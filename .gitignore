@@ -31,9 +31,8 @@ wheels/
 # ===============================
 # Sensitive / local data
 # ===============================
-settings.json
+
 tokens.txt
-rise_toolkit_data.json
 *.local
 
 # ===============================

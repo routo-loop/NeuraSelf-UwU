@@ -1,0 +1,164 @@
+{
+    "accounts": [
+        {
+            "channels": [
+                "1335308898566934628",
+                "1451901802709651456"
+            ],
+            "enabled": true,
+            "token": "YOUR_TOKEN"
+        }
+    ],
+    "auto_use": {
+        "autoCrate": true,
+        "autoLootbox": true,
+        "autosell": {
+            "enabled": true,
+            "type": "all"
+        },
+        "gems": {
+            "enabled": true,
+            "gemsToUse": {
+                "empoweredGem": true,
+                "huntGem": true,
+                "luckyGem": true,
+                "specialGem": true
+            },
+            "order": {
+                "lowestToHighest": false
+            },
+            "tiers": {
+                "common": true,
+                "epic": true,
+                "fabled": true,
+                "legendary": true,
+                "mythical": true,
+                "rare": true,
+                "uncommon": true
+            }
+        },
+        "open": {
+            "crate": "all",
+            "lootbox": "all"
+        }
+    },
+    "automation": {
+        "level_grind": {
+            "enabled": true,
+            "max_length": 100,
+            "min_length": 50,
+            "use_quotes": true
+        },
+        "rpp": {
+            "commands": [
+                "run",
+                "pup",
+                "piku"
+            ],
+            "enabled": true,
+            "interval_s": 60
+        }
+    },
+    "commands": {
+        "battle": {
+            "cooldown": [
+                18,
+                20
+            ],
+            "enabled": true
+        },
+        "coinflip": {
+            "amount": 400,
+            "enabled": false,
+            "side": "h"
+        },
+        "cookie": {
+            "enabled": true,
+            "pingUser": true,
+            "userid": "1240481646118043742"
+        },
+        "curse": {
+            "cooldown": [
+                310,
+                400
+            ],
+            "enabled": true,
+            "targets": [
+                "1192694758758432800"
+            ]
+        },
+        "daily": {
+            "enabled": true
+        },
+        "hunt": {
+            "cooldown": [
+                18,
+                20
+            ],
+            "enabled": true
+        },
+        "huntbot": {
+            "cash_to_spend": 15000,
+            "enabled": true
+        },
+        "owo": {
+            "cooldown": [
+                10,
+                13
+            ],
+            "enabled": true
+        },
+        "quest": {
+            "auto_checklist": true,
+            "enabled": true,
+            "interval_h": 6
+        },
+        "slots": {
+            "amount": 1,
+            "enabled": false
+        }
+    },
+    "core": {
+        "channel_id": "1335308898566934628",
+        "monitor_bot_id": "408785106942164992",
+        "prefix": "owo "
+    },
+    "security": {
+        "enabled": true,
+        "notifications": {
+            "desktop_title": "Neura Desktop Notification",
+            "enabled": true
+        },
+        "webhook_url": "webhook_url_here"
+    },
+    "stealth": {
+        "typing": {
+            "enabled": true,
+            "extra_delay": 2.5,
+            "max": 2.5,
+            "min": 0.5,
+            "mistake_rate": 0.1,
+            "reaction_max": 2,
+            "reaction_min": 0.8,
+            "typos": true
+        }
+    },
+    "utilities": {
+        "channel_switcher": {
+            "channels": [
+                "1335308898566934628",
+                "1451901802709651456"
+            ],
+            "enabled": true,
+            "interval": [
+                300,
+                350
+            ]
+        },
+        "popups": {
+            "enabled": true,
+            "on_ban": true,
+            "on_captcha": true
+        }
+    }
+}
