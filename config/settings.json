@@ -2,8 +2,8 @@
     "accounts": [
         {
             "channels": [
-                "1335308898566934628",
-                "1451901802709651456"
+                "CHANNEL_ID",
+                "CHANNELD_ID2"
             ],
             "enabled": true,
             "token": "YOUR_TOKEN"
@@ -146,8 +146,8 @@
     "utilities": {
         "channel_switcher": {
             "channels": [
-                "1335308898566934628",
-                "1451901802709651456"
+                "CHANNEL_ID",
+                "CHANNELD_ID2"
             ],
             "enabled": true,
             "interval": [
