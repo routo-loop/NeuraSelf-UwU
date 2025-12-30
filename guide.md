@@ -113,37 +113,15 @@ Your Discord token is like a password that lets the bot log in as you. Here's ho
 
 2. **Open Developer Tools**
    - Press `F12` on your keyboard (or `Ctrl + Shift + I`)
-   - Click on the "Network" tab at the top
+   - Click on the "Application" tab at the top
 
 3. **Find Your Token**
-   - Click on any channel in Discord
-   - In the Network tab, look for a request that starts with "messages"
+   - Click on Local storage little dropdown arrow
+   - You saw a url of discord 
    - Click on it
-   - Scroll down to "Request Headers"
-   - Find the line that says "authorization:"
-   - Copy the long text after it - that's your token!
+   - In Right Scroll down to "token" not tokens
+   - Copy the long text  that's your token!
 
-### Method 2: Using Discord Desktop App
-
-1. **Open Discord Desktop App**
-   - Make sure you're logged in
-
-2. **Open Developer Tools**
-   - Press `Ctrl + Shift + I` (Windows/Linux)
-   - Press `Cmd + Option + I` (macOS)
-
-3. **Go to Console Tab**
-   - Click on "Console" at the top
-
-4. **Run This Code**
-   - Copy and paste this exactly:
-
-   ```javascript
-   (webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()
-   ```
-
-   - Press Enter
-   - Your token will appear - copy it!
 
 ⚠️ **IMPORTANT WARNINGS:**
 
