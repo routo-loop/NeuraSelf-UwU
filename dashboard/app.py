@@ -156,6 +156,7 @@ def control():
         state.bot_paused = False
         for bot in state.bot_instances:
             bot.paused = False
+            bot.throttle_until = 0
             bot.log("SYS", "Bot RESUMED via Dashboard")
             
     elif action == 'cash':
@@ -177,6 +178,7 @@ def security():
         state.bot_paused = False
         for bot in state.bot_instances:
             bot.paused = False
+            bot.throttle_until = 0
         state.log_command("SEC", "User Resumed Bot from Security Alert", "success")
             
     return jsonify({'success': True})
