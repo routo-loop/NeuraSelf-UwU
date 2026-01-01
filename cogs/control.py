@@ -34,6 +34,9 @@ class Control:
                 self.bot.paused = False
                 state.bot_paused = False
                 state.active_session_start = time.time()
+                for bot in state.bot_instances:
+                    bot.paused = False
+                    bot.throttle_until = 0
                 self.bot.log("SYS", "Bot RESUMED via Chat Command")
                 await self.bot.send_message("Bot resumed.")
 
