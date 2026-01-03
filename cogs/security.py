@@ -31,7 +31,6 @@ class Security(commands.Cog):
         self.notification_title = cfg.get('notifications', {}).get('desktop_title', "Neura Security Alert")
         self.webhook_url = cfg.get('webhook_url')
         self.monitor_id = str(bot.config.get('core', {}).get('monitor_bot_id', '408785106942164992'))
-        self.channel_id = bot.channel_id
         self.beep_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "beeps", "security_beep.mp3")
         self.ban_keywords = ["youhavebeenbanned"]
         self.captcha_keywords = [
@@ -131,7 +130,7 @@ class Security(commands.Cog):
             return
         if self.bot.paused:
             return
-        if message.channel.id != self.channel_id:
+        if message.channel.id != self.bot.channel_id:
             return
 
         content = message.content or ""
